@@ -49,7 +49,7 @@ a {
 }
 
 /* about */
-.about_list > li {
+.about_list > .about_list_common {
   border-radius: 10px;
   overflow: hidden;
   background-size: cover;
@@ -70,7 +70,7 @@ a {
 }
 
 /* work */
-.work_list > li {
+.work_list_common {
   text-align: center;
 }
 .work_list_icon {
@@ -171,20 +171,20 @@ a {
   }
 
   /* ABOUT */
-  .about_list > li {
+  .about_list > .about_list_common {
     height: 200px;
   }
-  .about_list > li:not(:first-child) {
+  .about_list > .about_list_common:not(:first-child) {
     margin-top: 20px;
   }
 
   /* WORK */
-  .work_list > li:not(:first-child) {
+  .work_list > .work_list_common:not(:first-child) {
     margin-top: 30px;
   }
 
   /* BLOG */
-  .blog_list > li:not(:first-child) {
+  .blog_list > .blog_list_common:not(:first-child) {
     margin-top: 30px;
   }
   .blog_list_body {
@@ -221,7 +221,7 @@ a {
   .nav_list {
     display: flex;
   }
-  .nav_list > li:not(:first-child) {
+  .nav_list > .nav_list_common:not(:first-child) {
     margin-left: 30px;
   }
   .nav_link {
@@ -263,10 +263,10 @@ a {
     align-items: center;
     flex-wrap: wrap;
   }
-  .about_list > li {
+  .about_list > .about_list_common {
     height: 300px;
   }
-  .about_list > li:nth-child(n + 3) {
+  .about_list > .about_list_common:nth-child(n + 3) {
     margin-top: 30px;
   }
   .about_list > li.l-large{
@@ -287,24 +287,24 @@ a {
     display: flex;
     flex-wrap: wrap;
   }
-  .work_list > li {
+  .work_list_common {
     width: 33.3%;
     padding: 0 20px;
   }
-  .work_list > li:nth-child(n + 4) {
+  .work_list > .work_list_common:nth-child(n + 4) {
     margin-top: 40px;
   }
 
   /* BLOG */
-  .blog_list > li {
+  .blog_list_common {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .blog_list > li:not(:first-child) {
+  .blog_list > .blog_list_common:not(:first-child) {
     margin-top: 80px;
   }
-  .blog_list > li:nth-child(2n){
+  .blog_list > .blog_list_common:nth-child(2n){
     flex-direction: row-reverse;
   }
   .blog_list_pic {
@@ -315,7 +315,7 @@ a {
     padding-top: 10px;
     margin-left: 20px;
   }
-  .blog_list > li:nth-child(even) .blog_list_body{
+  .blog_list > .blog_list_common:nth-child(even) .blog_list_body{
     margin-left: 0;
     margin-right: 20px;
     text-align: right;
